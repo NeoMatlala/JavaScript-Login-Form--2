@@ -237,7 +237,7 @@ button.ghost{
         width: 330px;
         justify-self: center;
         display: grid;
-        height: 60vh;
+        height: 65vh;
         grid-template-columns: 100%;
     }
 
@@ -252,6 +252,15 @@ button.ghost{
 
     .sign-up-container{
         opacity: 1;
+    }
+
+    .sign-up-container button{
+        margin: 1rem 0;
+    }
+
+    .sign-up-container span, 
+    .sign-in-container span{
+        margin: 0.5rem 0;
     }
 
     .sign-in-container, .sign-up-container{
