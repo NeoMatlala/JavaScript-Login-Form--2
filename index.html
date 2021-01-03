@@ -9,8 +9,33 @@
 </head>
 <body>
     <div class="container" id="container">
-        <!--SIGN UP-->
-        <div class="form-container sign-up-container">
+
+        <!--SIGN IN-->
+        <div class="form-container sign-in-container" id="login-in">
+            <form action="#">
+                <h1>Sign In</h1>
+
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+
+                <span>or use your account</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+
+                <div class="no-account">
+                    <span class="login__account">Don't have an account?</span>
+                    <span class="login__signin" id="dont-have-account">Sign Up</span>
+                </div>
+            </form>
+        </div>
+
+        <!--CREATE ACCOUNT-->
+        <div class="form-container sign-up-container none" id="login-up">
             <form action="#">
                 <h1>Create Account</h1>
 
@@ -25,27 +50,15 @@
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <button>Sign Up</button>
-            </form>
-        </div>
 
-        <!--SIGN IN-->
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign In</h1>
-
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#" class="social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    <a href="#" class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <div>
+                    <span class="login__account">Already have an account?</span>
+                    <span class="login__signup" id="already-have-account">Sign In</span>
                 </div>
-
-                <span>or use your account</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forgot your password?</a>
-                <button>Sign Ip</button>
             </form>
         </div>
+
+        
 
         <div class="overlay-container">
             <div class="overlay">

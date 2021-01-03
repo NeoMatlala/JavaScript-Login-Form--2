@@ -161,6 +161,7 @@ button.ghost{
 }
 
 .overlay{
+    display: inline-block;
     background: #ff416c;
     background: linear-gradient(to right, #ff4b2b, #ff416c, ) no-repeat 0 0 / cover;
     color: #fff;
@@ -223,4 +224,72 @@ button.ghost{
 
 .container.right-panel-active .overlay-right{
     transform: translateX(20%);
+}
+
+.no-account{
+    display: none;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 576px){
+    .container{
+        width: 330px;
+        justify-self: center;
+        display: grid;
+        height: 60vh;
+        grid-template-columns: 100%;
+    }
+
+    .overlay-container{
+        display: none;
+    }
+
+
+    .form__container{
+        position: relative;
+    }
+
+    .sign-up-container{
+        opacity: 1;
+    }
+
+    .sign-in-container, .sign-up-container{
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        text-align: center;
+        animation-duration: .4s;
+        animation-name: animate-login;
+    }
+    
+    @keyframes animate-login{
+        0%{
+            transform: scale(1,1);
+        }
+        50%{
+            transform: scale(1.1,1.1);
+        }
+        100%{
+            transform: scale(1,1);
+        }
+    }
+
+    .no-account{
+        display: block;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+    /* SHOW LOGIN */
+    .block{
+        display: block;
+    }
+
+    /* HIDE LOGIN */
+    .none{
+        display: none;
+    }
 }
