@@ -14,4 +14,4 @@ The slide animation can be seen on desktops or screens with sizes 578px and high
 
 
 ## See it live
-Here's the live link: https://neomatlala.github.io/Login-Form--2/
+Here's the live link: https://neomatlala.github.io/JavaScript-Login-Form--2/
